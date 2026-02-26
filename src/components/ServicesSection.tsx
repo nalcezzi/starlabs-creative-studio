@@ -4,23 +4,23 @@ import { Smartphone, Palette, Code, Rocket } from "lucide-react";
 const services = [
   {
     icon: Smartphone,
-    title: "Mobil Uygulama",
-    description: "iOS ve Android için performanslı, kullanıcı dostu uygulamalar geliştiriyoruz.",
+    title: "Mobile Apps",
+    description: "Native and cross-platform apps built for performance and delightful user experiences.",
   },
   {
     icon: Palette,
-    title: "UI/UX Tasarım",
-    description: "Kullanıcı deneyimini merkeze alan, estetik ve işlevsel arayüzler tasarlıyoruz.",
+    title: "UI/UX Design",
+    description: "User-centered design that balances aesthetics with intuitive functionality.",
   },
   {
     icon: Code,
-    title: "Web Geliştirme",
-    description: "Modern teknolojilerle hızlı, güvenli ve ölçeklenebilir web çözümleri sunuyoruz.",
+    title: "Web Development",
+    description: "Fast, secure, and scalable web applications using modern technologies.",
   },
   {
     icon: Rocket,
-    title: "Dijital Strateji",
-    description: "Fikrinizi pazara taşımak için kapsamlı dijital stratejiler oluşturuyoruz.",
+    title: "Product Strategy",
+    description: "From idea to market — we help you define, build, and launch your digital product.",
   },
 ];
 
@@ -35,7 +35,7 @@ const cardVariants = {
 
 const ServicesSection = () => {
   return (
-    <section id="hizmetler" className="py-32 relative">
+    <section id="services" className="py-32 relative">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,10 +44,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <span className="text-sm font-medium text-brand uppercase tracking-widest">
-            Hizmetler
+            Services
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3">
-            Neler Yapıyoruz?
+            What We Do
           </h2>
         </motion.div>
 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoLight from "@/assets/logo-light.png";
 
 const HeroSection = () => {
   return (
@@ -14,15 +15,14 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 container px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+        <motion.img
+          src={logoLight}
+          alt="Starlabs"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-medium bg-brand/15 text-brand-light border border-brand/20 mb-8">
-            App Studio
-          </span>
-        </motion.div>
+          className="h-20 md:h-28 mx-auto mb-10"
+        />
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -30,9 +30,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight mb-6"
         >
-          Fikirlerinizi{" "}
-          <span className="text-gradient">dijital gerçekliğe</span>{" "}
-          dönüştürüyoruz
+          We build{" "}
+          <span className="text-gradient">apps</span>{" "}
+          that matter
         </motion.h1>
 
         <motion.p
@@ -41,8 +41,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          Starlabs olarak, yaratıcı tasarım ve ileri teknoloji ile markanızı
-          geleceğe taşıyoruz.
+          Starlabs is an app studio crafting beautiful, high-performance mobile and web applications from concept to launch.
         </motion.p>
 
         <motion.div
@@ -52,16 +51,16 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#iletişim"
+            href="#contact"
             className="px-8 py-3.5 rounded-xl font-medium bg-brand text-primary-foreground hover:bg-brand-light transition-colors glow text-base"
           >
-            Projeni Başlat
+            Start Your Project
           </a>
           <a
-            href="#projeler"
+            href="#work"
             className="px-8 py-3.5 rounded-xl font-medium border border-border text-foreground hover:bg-surface-hover transition-colors text-base"
           >
-            Projelerimiz
+            See Our Work
           </a>
         </motion.div>
       </div>
