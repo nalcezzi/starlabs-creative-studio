@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.png";
 
 const HeroSection = () => {
   return (
@@ -14,14 +15,14 @@ const HeroSection = () => {
       />
 
       <div className="relative z-10 container px-6 text-center">
-        <motion.div
+        <motion.img
+          src={logo}
+          alt="Starlabs"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-10"
-        >
-          <span className="text-4xl md:text-5xl font-bold text-gradient">Starlabs</span>
-        </motion.div>
+          className="h-20 md:h-28 mx-auto mb-10"
+        />
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
