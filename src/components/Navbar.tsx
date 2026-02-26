@@ -12,7 +12,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 glass"
     >
       <div className="container flex items-center justify-between h-16 px-6">
-        <img src={logo} alt="Starlabs" className="h-10" />
+        <img src={logo} alt="Starlabs" className="h-20" />
         <div className="hidden md:flex items-center gap-8">
           {[
             { label: "About", href: "#about" },
