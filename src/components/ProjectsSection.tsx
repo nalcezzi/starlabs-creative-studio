@@ -8,19 +8,19 @@ const projects = [
   },
   {
     title: "HealthPulse",
-    category: "Sağlık",
+    category: "Health",
     color: "from-emerald-500 to-teal-600",
   },
   {
     title: "EduFlow",
-    category: "Eğitim",
+    category: "Education",
     color: "from-amber-500 to-orange-600",
   },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projeler" className="py-32">
+    <section id="work" className="py-32">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,10 @@ const ProjectsSection = () => {
           className="text-center mb-16"
         >
           <span className="text-sm font-medium text-brand uppercase tracking-widest">
-            Projeler
+            Work
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3">
-            Son Çalışmalarımız
+            Recent Projects
           </h2>
         </motion.div>
 

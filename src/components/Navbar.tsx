@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import logoDark from "@/assets/logo-dark.png";
 
-const navItems = ["Hizmetler", "Projeler", "Hakkımızda", "İletişim"];
+const navItems = ["Services", "Work", "About", "Contact"];
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 glass"
     >
       <div className="container flex items-center justify-between h-16 px-6">
-        <img src={logoDark} alt="Starlabs" className="h-8" />
+        <img src={logoDark} alt="Starlabs" className="h-10" />
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -25,10 +25,10 @@ const Navbar = () => {
           ))}
         </div>
         <a
-          href="#iletişim"
+          href="#contact"
           className="px-5 py-2 rounded-lg text-sm font-medium bg-brand text-primary-foreground hover:bg-brand-light transition-colors glow"
         >
-          Başlayalım
+          Get in Touch
         </a>
       </div>
     </motion.nav>
