@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import logoDark from "@/assets/logo-dark.png";
 
-const navItems = ["Services", "Work", "About", "Contact"];
+const navItems = ["About", "Apps", "Contact"];
 
 const Navbar = () => {
   return (
@@ -14,13 +14,17 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 px-6">
         <img src={logoDark} alt="Starlabs" className="h-10" />
         <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+          {[
+            { label: "About", href: "#about" },
+            { label: "Apps", href: "#work" },
+            { label: "Contact", href: "#contact" },
+          ].map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
